@@ -32,7 +32,7 @@ void AMazePlayerController::LookPitch(float Val)
 {
 	if (Val != 0.f)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("%s Val: %f"), ANSI_TO_TCHAR(__func__), Val);
+		//UE_LOG(LogTemp, Warning, TEXT("%s Val: %f"), ANSI_TO_TCHAR(__func__), Val);
 		AddPitchInput(Val * PitchTurnRate * GetWorld()->GetDeltaSeconds());
 	}
 }
